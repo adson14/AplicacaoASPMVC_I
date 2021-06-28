@@ -10,11 +10,45 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
+        
+        <form action="Home/List" method="post">
+            <fieldset>
+                <legend>Pessoas</legend>
+
+
+                <div>
+                    <label for="PessoaId">Código</label>
+                </div>
+                <div>
+                    <input type="number" value="@ViewData["PessoaId"]" name="PessoaId" />
+                </div>
+
+                <div>
+                    <label for="Nome">Nome</label>
+                </div>
+                <div>
+                    <input type="text" value="@ViewData["Nome"]" name="Name" />
+                </div>
+
+                <div>
+                    <label for="Email">Email</label>
+                </div>
+                <div>
+                    <input type="email" value="@ViewData["Email"]" name="Email" />
+                </div>
+
+
+                <div>
+                    <label for="Tipo">Tipo</label>
+                </div>
+                <div>
+                    <input type="text" value="@ViewData["Tipo"]" name="Tipo" />
+                </div>
+
+                <p><input type="submit" value="Enviar" /> </p>
+            </fieldset>
+
+        </form>
+    </div>
        
 </div>
